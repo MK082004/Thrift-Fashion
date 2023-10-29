@@ -1,0 +1,385 @@
+:root{
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+.login-form{
+    width: 500px;
+    height: 550px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 px hsl(0 4% 15% / 10%);
+    transition: 0.8s all ease;
+    cursor:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-self: center;   
+    padding: 50px;
+    height: 100%;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.main::-webkit-scrollbar{
+    width: 7px;
+}
+  
+.main::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+  
+.main::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+.login-form{
+    position: relative;
+}
+
+.times-spin{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.times{
+    font-size: 35px;
+    color: black;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.form-logo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-logo>h1{
+    font-size: 25px;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+    color: var(--main-color);
+}
+
+.form-logo>h3{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.main-form-section{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.email-ip>input,.password-ip>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+    width: 100% !important;
+    color: black;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.password-ip{
+    position: relative;
+}
+
+.password-ip>input{
+    display: inline-block;
+}
+
+.password-ip .fa-eye-slash{
+    position: absolute;
+    right: 3px;
+    bottom: 15px;
+    color: rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.password-ip .fa-eye{
+    position: absolute;
+    right: 3px;
+    bottom: 15px;
+    color: grey;
+    cursor: pointer;  
+}
+
+.form-bottom-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-btn>a>button{
+    width: 100%;
+    background-color: #fd4646;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    transition: 0.3s all ease;
+}
+
+.login-btn>a>button:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+.login-forgot>span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.login-forgot>span>a{
+    position: relative;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-forgot>span>a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.login-forgot>span>a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.login-creat-acc>span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.login-creat-acc>span>a>button{
+    width: 100%;
+    background-color: #ffffff;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    transition: 0.3s all ease;
+}
+
+.login-creat-acc>span>a>button:hover{
+    background-color: #fd4646;
+    color: white;
+}
+
+#login-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#login-button[disabled],#submit-forgot[disabled]{
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f5f5f5;
+    color: #ccc;
+    border: none;
+}
+
+.email-ip,.password-ip{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.input-label{
+    pointer-events: none;
+    transition: all 0.2s;
+    font-size: 13px;
+    color: grey;  
+}
+
+.input-label{
+    display: none;
+}
+
+.input-label.active{
+    display: block;
+}
+
+.overlay-3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 555555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.popup-forgot{
+    position: relative;
+    width: 750px;
+    height: 400px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 px hsl(0 4% 15% / 10%);
+    transition: 0.8s all ease;
+    top: 9%;
+    left: 25%;
+    cursor:auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  
+#close-forgot-password{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+}
+  
+.popup-header-forgot{
+    text-align: center;
+}
+
+.popup-header-forgot>h2{
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+  
+.popup-content-forgot{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.email-ip-forgot{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.email-ip-forgot>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.568);
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.submit-btn-2{
+    text-align: center;
+}
+
+.submit-btn-2>button{
+    padding: 8px 15px;
+    width: 250px;
+    color: white;
+    font-size: 20px;
+    background-color: #171427;
+    border:  none;
+    outline: none;
+}
+  
+@media (max-width:767px) {
+    .login-form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .main{
+        padding: 50px 20px;
+        margin: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .login-form{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .main{
+        padding: 50px 20px;
+        margin: 0;
+    }
+}
+
+.icon-name {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#user-name-container {
+    position: relative;
+    height: 80%;
+    font-size: 13px;
+    color: #6e6e6e;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    background-color: rgba(241, 241, 241, 0.863);
+    width: 120px;
+    box-shadow: 5px 8px 6px 0.5px rgba(128, 128, 128, 0.5);
+    display: none;
+}
+
+.dropdown-content>a {
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}

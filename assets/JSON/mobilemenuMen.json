@@ -1,0 +1,23 @@
+[
+    {
+        "GenderMENU": "Men",
+        "Deal1Image": "assets/images/new-arrivals-logo.png",
+        "Deal2Image": "assets/images/best-sellers-logo.png",
+        "Deal3Image": "assets/images/collection-logo.png",
+        "Deal1": "Men's New Arrivals",
+        "Deal2": "Men's Bestsellers",
+        "Deal3": "Collections & Collabs",
+        "ProductName1": "Men's Jeans",
+        "Products1C": "Shop All Men's",
+        "Products2C": "Shirts & T-Shirts",
+        "Products3C": "Pants & Chinos",
+        "Products4C": "Jean Jackets & Outerwear",
+        "Products5C": "Shorts",
+        "Products6C": "Big & Talls",
+        "Products7C": "Accessories",
+        "Products8C": "Sale",
+        "Products1F": "Featured",
+        "Products2F": "Secondhand",
+        "Products3F": "Blog: Off the cuff"
+    }
+]

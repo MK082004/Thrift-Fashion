@@ -1,0 +1,22 @@
+[
+    {
+        "Deal1Image": "assets/images/new-arrivals-desktop.png",
+        "Deal2Image": "assets/images/Bestseller-desktop.png",
+        "Deal1": "Kid's New Arrivals",
+        "Deal2": "Kid's Bestsellers",
+        "ProductName1": "Men's Clothes",
+        "ProductName2": "Featured",
+        "ProductName3": "BLOG: OFF THE CUFF",
+        "Products1C": "Shop All Kid's",
+        "Products2C": "Boys (8-20)",
+        "Products3C": "Little Boys (4–7x)",
+        "Products4C": "Girls (7–16)",
+        "Products5C": "Little Girls (4–6x)",
+        "Products6C": "Toddler",
+        "Products7C": "Baby",
+        "Products8C": "Sale",
+        "Products1F": "Icons",
+        "Products2F": "Cozy Edit",
+        "Products3F": "Stocking Stuffers"
+    }
+]

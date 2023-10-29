@@ -1,0 +1,33 @@
+[
+    {
+        "DealImage": "assets/images/Sale-desktop.png",
+        "Deal": "Shop All Sale",
+        "ProductName1": "MEN’S SALE",
+        "ProductName2": "WOMEN’S SALE",
+        "ProductName3": "KIDS' SALE",
+        "ProductsM": "Shop All Men’s Jeans",
+        "Products1M": "Jeans",
+        "Products2M": "Shirts & T-Shirts",
+        "Products3M": "Pants & Chinos",
+        "Products4M": "Jean Jackets & Outerwear",
+        "Products5M": "Sweaters & Sweatshirts",
+        "Products6M": "Shorts",
+        "Products7M": "Accessories",
+        "Products8M": "Big & Tall",
+        "Products1W": "Shop All Women's Sale",
+        "Products2W": "Jeans",
+        "Products3W": "Tops",
+        "Products4W": "Pants",
+        "Products5W": "Jean Jackets & Outerwear",
+        "Products6W": "Sweaters & Sweatshirts",
+        "Products7W": "Shorts",
+        "Products8W": "Dresses & Skirts",
+        "Products9W": "Accessories",
+        "Products1K": "Shop All Kids' Sale",
+        "Products2K": "Boys",
+        "Products3K": "Girls",
+        "Products4K": "Baby & Toddler",
+        "Products1F": "SECONDHAND",
+        "Products2F": "BLOG: OFF THE CUFF"
+    }
+]
